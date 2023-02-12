@@ -7,22 +7,14 @@ abstract class AppStateEvent extends Equatable {
   List<Object?> get props => [];
 }
 
-class WelcomePageEvent extends AppStateEvent {
-  const WelcomePageEvent();
+class CheckAvailabilityEvent extends AppStateEvent {
+  const CheckAvailabilityEvent();
 }
 
-class CompleteWelcomeEvent extends AppStateEvent {
-  const CompleteWelcomeEvent();
+class StartReadingEvent extends AppStateEvent {
+  const StartReadingEvent();
 }
 
-class CompleteLoginEvent extends AppStateEvent {
-  const CompleteLoginEvent();
-}
-
-class LoginPageEvent extends AppStateEvent {
-  const LoginPageEvent();
-}
-
-class OnboardingCompleteEvent extends AppStateEvent {
-  const OnboardingCompleteEvent();
+class StopReadingEvent extends AppStateEvent {
+  const StopReadingEvent();
 }

@@ -39,7 +39,7 @@ class AppStateClass extends State<App> {
     routemaster = RoutemasterDelegate(
       routesBuilder: (context) {
         final state = BlocProvider.of<AppBloc>(context).state;
-        if (state is HomeState) {
+        if (state is StartReadingState) {
           return PageRoutes.home;
         } else {
           return PageRoutes.home;

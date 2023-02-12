@@ -2,7 +2,6 @@ part of 'app_bloc.dart';
 
 abstract class AppState extends Equatable {
   const AppState();
-
   // coverage:ignore-start
   @override
   List<Object?> get props => [];
@@ -16,29 +15,22 @@ class LoadingAppState extends AppState {
   List<Object?> get props => [];
 }
 
-class WelcomeState extends AppState {
-  const WelcomeState() : super();
+class CheckAvailabilityState extends AppState {
+  const CheckAvailabilityState() : super();
 
   @override
   List<Object?> get props => [];
 }
 
-class AppLoginState extends AppState {
-  const AppLoginState() : super();
+class StartReadingState extends AppState {
+  const StartReadingState() : super();
 
   @override
   List<Object?> get props => [];
 }
 
-class OnboardingState extends AppState {
-  const OnboardingState() : super();
-
-  @override
-  List<Object?> get props => [];
-}
-
-class HomeState extends AppState {
-  const HomeState() : super();
+class StopReadingState extends AppState {
+  const StopReadingState() : super();
 
   @override
   List<Object?> get props => [];
